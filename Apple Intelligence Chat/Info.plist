@@ -22,10 +22,12 @@
     <key>LSRequiresIPhoneOS</key>
     <true/>
     <key>CFBundleIcons</key>
-    <key>CFBundlePrimaryIcon</key>
     <dict>
-        <key>CFBundleIconName</key>
-        <string>AppIcon</string>
+        <key>CFBundlePrimaryIcon</key>
+        <dict>
+            <key>CFBundleIconName</key>
+            <string>AppIcon</string>
+        </dict>
     </dict>
 </dict>
 </plist>
