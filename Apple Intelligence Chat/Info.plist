@@ -21,34 +21,5 @@
     <string>APPL</string>
     <key>LSRequiresIPhoneOS</key>
     <true/>
-    
-    <!-- App Icon Configuration -->
-    <key>CFBundleIcons</key>
-    <dict>
-        <key>CFBundlePrimaryIcon</key>
-        <dict>
-            <key>CFBundleIconName</key>
-            <string>AppIcon</string>
-            <key>CFBundleIconFiles</key>
-            <array>
-                <string>AppIcon</string>
-            </array>
-        </dict>
-    </dict>
-
-    <!-- iPad Icon Configuration (optional) -->
-    <key>CFBundleIcons~ipad</key>
-    <dict>
-        <key>CFBundlePrimaryIcon</key>
-        <dict>
-            <key>CFBundleIconName</key>
-            <string>AppIcon</string>
-            <key>CFBundleIconFiles</key>
-            <array>
-                <string>AppIcon</string>
-            </array>
-        </dict>
-    </dict>
-
 </dict>
 </plist>

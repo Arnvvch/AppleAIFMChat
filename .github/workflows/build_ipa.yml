@@ -19,8 +19,8 @@ jobs:
         with:
           xcode-version: '26.0-beta'
 
-      #- name: Clean build
-        #run: xcodebuild clean
+      - name: Clean build
+        run: xcodebuild clean
 
 
       - name: Archive app (unsigned)
