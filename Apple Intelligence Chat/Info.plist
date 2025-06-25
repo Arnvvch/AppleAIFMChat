@@ -4,6 +4,10 @@
 <dict>
     <key>CFBundleName</key>
     <string>Chat</string>
+    <key>CFBundleExecutable</key>
+    <string>Apple Intelligence Chat</string> <!-- or your real binary name -->
+    <key>CFBundleIdentifier</key>
+    <string>com.arnvvch.chat.app</string>
     <key>CFBundleDisplayName</key>
     <string>Chat</string>
     <key>CFBundleIdentifier</key>
