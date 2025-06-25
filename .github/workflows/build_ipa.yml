@@ -1,0 +1,50 @@
+name: iOS 26 SDK Unsigned Build
+
+
+on: 
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: macos-15 # Required for Xcode 16 betas
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Xcode 16 beta
+        uses: maxim-lobanov/setup-xcode@v1
+        with:
+          xcode-version: '26.0-beta'
+
+      - name: Archive app (unsigned)
+        run: |
+          xcodebuild clean archive \
+            -project "Apple Intelligence Chat.xcodeproj" \
+            -scheme "Apple Intelligence Chat" \
+            -sdk iphoneos \
+            -configuration Release \
+            -archivePath ${{ runner.temp }}/Archive.xcarchive \
+            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGN_IDENTITY="" \
+            DEVELOPMENT_TEAM="" 
+
+      - name: Create unsigned IPA manually
+        run: |
+          APP_PATH="${{ runner.temp }}/Archive.xcarchive/Products/Applications/Apple Intelligence Chat.app"
+          PAYLOAD_PATH="${{ runner.temp }}/Payload"
+
+          mkdir -p "$PAYLOAD_PATH"
+          cp -R "$APP_PATH" "$PAYLOAD_PATH/"
+
+          cd ${{ runner.temp }}
+          zip -r UnsignedApp.ipa Payload
+
+      - name: Upload unsigned IPA
+        uses: actions/upload-artifact@v4
+        with:
+          name: AppleIntelligenceChat-Unsigned-IPA
+          path: ${{ runner.temp }}/UnsignedApp.ipa
