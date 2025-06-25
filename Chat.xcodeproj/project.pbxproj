@@ -119,15 +119,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				/* Begin PBXBuildFile section */
-				8CB59C992DF7A31C00F9A099 /* Assets.xcassets in Resources */ = {
-					isa = PBXBuildFile;
-					fileRef = 8CB59C982DF7A31C00F9A098 /* Assets.xcassets */;
-				};
+
 
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+
+		/* Begin PBXBuildFile section */
+			8CB59C992DF7A31C00F9A099 /* Assets.xcassets in Resources */ = {
+				isa = PBXBuildFile;
+				fileRef = 8CB59C982DF7A31C00F9A098 /* Assets.xcassets */;
+			};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
