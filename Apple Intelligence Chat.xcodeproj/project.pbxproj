@@ -63,7 +63,7 @@
 			fileSystemSynchronizedGroups = (
 				8CB59C162DF7A31C00F9A0BE /* Apple Intelligence Chat */,
 			);
-			name = "Chat";
+			name = "Apple Intelligence Chat";
 			packageProductDependencies = (
 			);
 			productName = "Chat";
