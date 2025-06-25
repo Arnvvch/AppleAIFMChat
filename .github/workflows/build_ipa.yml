@@ -26,8 +26,8 @@ jobs:
       - name: Archive app (unsigned)
         run: |
           xcodebuild clean archive \
-            -project "Apple Intelligence Chat.xcodeproj" \
-            -scheme "Apple Intelligence Chat" \
+            -project "Chat.xcodeproj" \
+            -scheme "Chat" \
             -sdk iphoneos \
             -configuration Release \
             -archivePath ${{ runner.temp }}/Archive.xcarchive \
@@ -38,7 +38,7 @@ jobs:
 
       - name: Create unsigned IPA manually
         run: |
-          APP_PATH="${{ runner.temp }}/Archive.xcarchive/Products/Applications/Apple Intelligence Chat.app"
+          APP_PATH="${{ runner.temp }}/Archive.xcarchive/Products/Applications/Chat.app"
           PAYLOAD_PATH="${{ runner.temp }}/Payload"
 
           mkdir -p "$PAYLOAD_PATH"
