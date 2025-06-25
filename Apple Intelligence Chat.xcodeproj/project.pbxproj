@@ -36,16 +36,6 @@
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
-/* Begin PBXResourcesBuildPhase section */
-	8CB59C122DF7A31C00F9A0BE /* Resources */ = {
-		isa = PBXResourcesBuildPhase;
-		buildActionMask = 2147483647;
-		files = (
-			ASSETCATALOG_BUILD_FILE /* Assets.xcassets in Resources */,
-		);
-		runOnlyForDeploymentPostprocessing = 0;
-	};
-/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		8CB59C112DF7A31C00F9A0BE /* Frameworks */ = {
