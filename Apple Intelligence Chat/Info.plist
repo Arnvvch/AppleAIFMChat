@@ -21,18 +21,19 @@
     <string>APPL</string>
     <key>LSRequiresIPhoneOS</key>
     <true/>
+
+
     <key>CFBundleIcons</key>
-    <key>CFBundleIcons</key>
+
+    <key>CFBundlePrimaryIcon</key>
     <dict>
-        <key>CFBundlePrimaryIcon</key>
-        <dict>
-            <key>CFBundleIconName</key>
+        <key>CFBundleIconName</key>
+        <string>AppIcon</string>
+        <key>CFBundleIconFiles</key>
+        <array>
             <string>AppIcon</string>
-            <key>CFBundleIconFiles</key>
-            <array>
-                <string>AppIcon</string>
-            </array>
-        </dict>
+        </array>
     </dict>
+
 </dict>
 </plist>
