@@ -105,14 +105,13 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-8CB59C122DF7A31C00F9A0BE /* Resources */ = {
-  isa = PBXResourcesBuildPhase;
-  buildActionMask = 2147483647;
-  files = (
-    // Leave empty or insert file refs like 1234567890ABCDEF /* LaunchScreen.storyboard in Resources */
-  );
-  runOnlyForDeploymentPostprocessing = 0;
-};
+		8CB59C122DF7A31C00F9A0BE /* Resources */ = {Add commentMore actions
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -348,3 +347,32 @@
 	};
 	rootObject = 8CB59C0C2DF7A31C00F9A0BE /* Project object */;
 }
+
+/* Begin PBXFileReference section */
+	8CB59C142DF7A31C00F9A0BE /* Apple Intelligence Chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Apple Intelligence Chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+	ASSETCATALOG_FILE_REF /* Assets.xcassets */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = folder.assetcatalog;
+		name = "Assets.xcassets";
+		path = "Apple Intelligence Chat/Assets.xcassets";
+		sourceTree = "<group>";
+	};
+/* End PBXFileReference section */
+
+/* Begin PBXBuildFile section */
+	ASSETCATALOG_BUILD_FILE /* Assets.xcassets in Resources */ = {
+		isa = PBXBuildFile;
+		fileRef = ASSETCATALOG_FILE_REF /* Assets.xcassets */;
+	};
+/* End PBXBuildFile section */
+
+/* Begin PBXResourcesBuildPhase section */
+	8CB59C122DF7A31C00F9A0BE /* Resources */ = {
+		isa = PBXResourcesBuildPhase;
+		buildActionMask = 2147483647;
+		files = (
+			ASSETCATALOG_BUILD_FILE /* Assets.xcassets in Resources */,
+		);
+		runOnlyForDeploymentPostprocessing = 0;
+	};
+/* End PBXResourcesBuildPhase section */
